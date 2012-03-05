@@ -49,18 +49,10 @@ header h1 {
 	max-width:800px;
 	border-bottom:1px solid #0084D1;
 }
-
-#nav li {
-	list-style-position:none;
-	list-style-type:none;
-	padding:0px 0px;
-	margin:0 0 20px 0;
-}
-#nav li a {
+#nav li span, #nav li a {
 	color:#C4E261;
 	text-decoration:none;
 	border:none;
-	background-color:#404a20;
 	padding:5px 10px;
 	border:1px solid #000;
 	border-top-left-radius:5px;
@@ -68,6 +60,18 @@ header h1 {
 	border-right:none;
 	z-index:50;
 	box-shadow:0px 0px 3px 0px #333333;
+}
+#nav span {
+	background-color:#574b25;
+}
+#nav li {
+	list-style-position:none;
+	list-style-type:none;
+	padding:0px 0px;
+	margin:0 0 20px 0;
+}
+#nav li a {
+	background-color:#404a20;
 }
 
 #nav li a:hover {
