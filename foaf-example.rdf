@@ -51,7 +51,7 @@
     <firstname>John</firstname>
     <homepage rdf:resource="http://example.org/"/>
     <icqChatID>123456789</icqChatID>
-    <img rdf:resource="https://example.org/pic.jpg"/>
+    <img rdf:resource="https://thomasba.github.io/pic.jpg"/>
     <jabberID>jd@jabber.example.org</jabberID>
     <knows rdf:resource="http://example.org/someoneelse"/>
     <knows rdf:resource="mailto:someone@example.org"/>
