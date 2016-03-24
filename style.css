@@ -44,3 +44,19 @@ h2 {
 	color:#0c5dcb;
 	border-bottom:1px dotted #0c5dcb;
 }
+.nav {
+	list-style-type:none;
+	padding: 0;
+}
+.nav li {
+	display: inline-block;
+
+}
+.nav li a {
+	display: inline-block;
+	border:1px solid #0096ff;
+	border-radius: 5px;
+	padding:3px;
+	min-width:100px;
+	text-align: center;
+}
