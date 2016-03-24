@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="https://raw.githubusercontent.com/thomasba/foaf-xslt/master/foaf.xslt"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns="http://xmlns.com/foaf/spec/">
+  <rdf:Description rdf:about="fax:012345">
+    <rdfs:label>private</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="fax:67890">
+    <rdfs:label>work</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://dbpedia.org/resource/Stuttgart">
+    <rdfs:label>Stuttgart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/stuff">
+    <rdfs:label>Stuff</rdfs:label>
+  </rdf:Description>
+  <person rdf:about="mailto:me@example.org">
+    <account>
+      <OnlineAccount>
+        <accountName>jdoe</accountName>
+        <accountServiceHomepage rdf:resource="http://example.org/"/>
+      </OnlineAccount>
+    </account>
+    <account>
+      <OnlineAccount>
+        <rdfs:label>Example with custom label</rdfs:label>
+        <accountName>jdoe</accountName>
+        <accountServiceHomepage rdf:resource="http://example.org/"/>
+      </OnlineAccount>
+    </account>
+    <account>
+      <OnlineAccount>
+        <rdfs:label>example with custom profile url</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://example.org/profile/jdoe"/>
+        <accountName>jdoe</accountName>
+        <accountServiceHomepage rdf:resource="http://example.org/"/>
+      </OnlineAccount>
+    </account>
+    <basedNear rdf:resource="http://dbpedia.org/resource/Stuttgart"/>
+    <basedNear>
+      <pos:Point>
+        <pos:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.783333</pos:lat>
+        <pos:lon rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.183333</pos:lon>
+      </pos:Point>
+    </basedNear>
+    <birthday>1970-01-01</birthday>
+    <firstname>John</firstname>
+    <homepage rdf:resource="http://example.org/"/>
+    <icqChatID>123456789</icqChatID>
+    <img rdf:resource="https://example.org/pic.jpg"/>
+    <jabberID>jd@jabber.example.org</jabberID>
+    <knows rdf:resource="http://example.org/someoneelse"/>
+    <knows rdf:resource="mailto:someone@example.org"/>
+    <lastname>Doe</lastname>
+    <made rdf:resource="https://example.org/i-made-this/"/>
+    <mbox rdf:resource="fax:012345"/>
+    <mbox rdf:resource="fax:67890"/>
+    <mbox rdf:resource="mailto:private@example.org"/>
+    <mbox rdf:resource="mailto:work@example.org"/>
+    <name>John Doe</name>
+    <nick>jdoe</nick>
+    <openid rdf:resource="http://example.com/openid/jd"/>
+    <phone rdf:resource="tel:0123456"/>
+    <skypeID>john_doe</skypeID>
+    <tipjar rdf:resource="https://example.org/tipjar"/>
+    <topic_interest rdf:resource="http://example.org/stuff"/>
+    <topic_interest rdf:resource="http://xmlns.com/foaf/spec/"/>
+  </person>
+  <rdf:Description rdf:about="mailto:private@example.org">
+    <rdfs:label>private</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="mailto:someone@example.org">
+    <name>Someone</name>
+  </rdf:Description>
+  <rdf:Description rdf:about="mailto:work@example.org">
+    <rdfs:label>work</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="tel:0123456">
+    <rdfs:label>Mobile</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
